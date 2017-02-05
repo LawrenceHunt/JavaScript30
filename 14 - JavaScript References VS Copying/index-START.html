@@ -9,11 +9,18 @@
   <script>
     // start with strings, numbers and booleans
 
+    let age = 100;
+    let age2 = age;
+    console.log(age, age2);
+    age = 200;
+    console.log(age, age2);
+
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
-
+    const team = players;
+    cons
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
@@ -33,6 +40,9 @@
     // or use the new ES6 Spread
 
     // now when we update it, the original one isn't changed
+
+    const team2 = players.slice();
+    players.concat
 
     // The same thing goes for objects, let's say we have a person object
 
